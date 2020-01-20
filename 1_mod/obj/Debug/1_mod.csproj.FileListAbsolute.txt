@@ -1,0 +1,37 @@
+H:\программы\dropbox\Dropbox\4 курс\ComputerGrafics\1_mod\bin\Debug\1_mod.exe.config
+H:\программы\dropbox\Dropbox\4 курс\ComputerGrafics\1_mod\bin\Debug\1_mod.exe
+H:\программы\dropbox\Dropbox\4 курс\ComputerGrafics\1_mod\bin\Debug\1_mod.pdb
+H:\программы\dropbox\Dropbox\4 курс\ComputerGrafics\1_mod\obj\Debug\1_mod.csprojResolveAssemblyReference.cache
+H:\программы\dropbox\Dropbox\4 курс\ComputerGrafics\1_mod\obj\Debug\_1_mod.Form1.resources
+H:\программы\dropbox\Dropbox\4 курс\ComputerGrafics\1_mod\obj\Debug\_1_mod.Properties.Resources.resources
+H:\программы\dropbox\Dropbox\4 курс\ComputerGrafics\1_mod\obj\Debug\1_mod.csproj.GenerateResource.Cache
+H:\программы\dropbox\Dropbox\4 курс\ComputerGrafics\1_mod\obj\Debug\1_mod.exe
+H:\программы\dropbox\Dropbox\4 курс\ComputerGrafics\1_mod\obj\Debug\1_mod.pdb
+\\edu.tversu.net\dfs-root\Users\Folders\vomihajlovich\Downloads\1_mod\1_mod\bin\Debug\1_mod.exe.config
+\\edu.tversu.net\dfs-root\Users\Folders\vomihajlovich\Downloads\1_mod\1_mod\obj\Debug\1_mod.exe
+\\edu.tversu.net\dfs-root\Users\Folders\vomihajlovich\Downloads\1_mod\1_mod\obj\Debug\1_mod.pdb
+\\edu.tversu.net\dfs-root\Users\Folders\vomihajlovich\Downloads\1_mod\1_mod\bin\Debug\1_mod.exe
+\\edu.tversu.net\dfs-root\Users\Folders\vomihajlovich\Downloads\1_mod\1_mod\bin\Debug\1_mod.pdb
+\\edu.tversu.net\dfs-root\Users\Folders\vomihajlovich\Downloads\1_mod\1_mod\obj\Debug\1_mod.csprojResolveAssemblyReference.cache
+\\edu.tversu.net\dfs-root\Users\Folders\vomihajlovich\Downloads\1_mod\1_mod\obj\Debug\_1_mod.Form1.resources
+\\edu.tversu.net\dfs-root\Users\Folders\vomihajlovich\Downloads\1_mod\1_mod\obj\Debug\_1_mod.Properties.Resources.resources
+\\edu.tversu.net\dfs-root\Users\Folders\vomihajlovich\Downloads\1_mod\1_mod\obj\Debug\1_mod.csproj.GenerateResource.Cache
+E:\1_mod\bin\Debug\1_mod.exe.config
+E:\1_mod\obj\Debug\1_mod.exe
+E:\1_mod\obj\Debug\1_mod.pdb
+E:\1_mod\bin\Debug\1_mod.exe
+E:\1_mod\bin\Debug\1_mod.pdb
+E:\1_mod\obj\Debug\1_mod.csprojResolveAssemblyReference.cache
+E:\1_mod\obj\Debug\_1_mod.Form1.resources
+E:\1_mod\obj\Debug\_1_mod.Properties.Resources.resources
+E:\1_mod\obj\Debug\1_mod.csproj.GenerateResource.Cache
+F:\1_mod\bin\Debug\1_mod.exe.config
+F:\1_mod\obj\Debug\1_mod.exe
+F:\1_mod\obj\Debug\1_mod.pdb
+F:\1_mod\bin\Debug\1_mod.exe
+F:\1_mod\bin\Debug\1_mod.pdb
+F:\1_mod\obj\Debug\_1_mod.Form1.resources
+F:\1_mod\obj\Debug\_1_mod.Properties.Resources.resources
+F:\1_mod\obj\Debug\1_mod.csproj.GenerateResource.Cache
+F:\1_mod\obj\Debug\1_mod.csprojAssemblyReference.cache
+F:\1_mod\obj\Debug\1_mod.csproj.CoreCompileInputs.cache
