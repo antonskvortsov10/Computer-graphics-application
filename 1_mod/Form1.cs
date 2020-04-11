@@ -16,13 +16,12 @@ namespace _1_mod
         List<Point> points = new List<Point>();
         List<Point> figure = new List<Point>();
         List<Point> newFigure = new List<Point>();
-
         int n;
         int eps = 5;
         bool flag = false;
         bool ok = false;
 
-        Point centre;
+        Point center;
         Point A;
         Point B;
         int a;
@@ -50,13 +49,14 @@ namespace _1_mod
                 figure.Add(new Point(e.X, e.Y));    // Добавляем точку фигуры
                 graph.DrawRectangle(Pens.Red, e.X - 2, e.Y - 2, 5, 5);  // Отрисовка точки
             }
+
             if (e.Button == MouseButtons.Right && !flag)
             {
                 for (int i = 0; i < points.Count(); i++)
                 {
                     if (points[i].X < e.X + eps && points[i].X > e.X - eps && points[i].Y < e.Y + eps && points[i].Y > e.Y - eps)
                     {
-                        n = i;
+                        n = i;  // Точка маршрута, которую хотим переместить
                         break;
                     }
                 }
@@ -67,7 +67,7 @@ namespace _1_mod
                 {
                     if (figure[i].X < e.X + eps && figure[i].X > e.X - eps && figure[i].Y < e.Y + eps && figure[i].Y > e.Y - eps)
                     {
-                        n = i;
+                        n = i;  // Точка фигуры, которую хотим переместить
                         break;
                     }
                 }
@@ -92,7 +92,9 @@ namespace _1_mod
                 {
                     Point[] fig = new Point[figure.Count()];
                     for (int i = 0; i < figure.Count(); i++)
+                    {
                         fig[i] = figure[i];
+                    }
                     graph.FillPolygon(Brushes.Blue, fig);
                 }
             }
@@ -127,8 +129,10 @@ namespace _1_mod
                 sum_x += figure[i].X;
                 sum_y += figure[i].Y;
             }
-            centre = new Point(sum_x / figure.Count(), sum_y / figure.Count());
-            a = 0; t = 0; pos = 2;
+            center = new Point(sum_x / figure.Count(), sum_y / figure.Count());
+            a = 0;
+            t = 0;
+            pos = 2;
             timer1.Start();
         }
 
@@ -144,7 +148,6 @@ namespace _1_mod
                 points[n] = new Point(e.X, e.Y);
                 DrawScene();
             }
-
             if (e.Button == MouseButtons.Right && flag && n != -1)
             {
                 figure[n] = new Point(e.X, e.Y);
@@ -157,7 +160,7 @@ namespace _1_mod
             // Сдвиг к началу координат + поворот
             for (int i = 0; i < newFigure.Count(); i++)
             {
-                newFigure[i] = new Point(figure[i].X - centre.X, figure[i].Y - centre.Y);
+                newFigure[i] = new Point(figure[i].X - center.X, figure[i].Y - center.Y);
                 newFigure[i] = new Point((int)(newFigure[i].X * Math.Cos((double)(a) * Math.PI / 180) - newFigure[i].Y * Math.Sin((double)(a) * Math.PI / 180)),
                                          (int)(newFigure[i].X * Math.Sin((double)(a) * Math.PI / 180) + newFigure[i].Y * Math.Cos((double)(a) * Math.PI / 180)));
             }
@@ -182,9 +185,12 @@ namespace _1_mod
             }
             Point[] fig = new Point[newFigure.Count()];
             for (int i = 0; i < newFigure.Count(); i++)
+            {
                 fig[i] = newFigure[i];
+            }
             graph.FillPolygon(Brushes.Blue, fig);
-            t += dt; a+=3;
+            t += dt;
+            a += 3;
             if (t > 1)
             {
                 A = B;
