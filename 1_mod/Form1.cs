@@ -14,12 +14,14 @@ namespace _1_mod
     {
         Graphics graph;
         List<Point> points = new List<Point>();
-        List<Point> newFigure = new List<Point>();
         List<Point> figure = new List<Point>();
+        List<Point> newFigure = new List<Point>();
+
         int n;
         int eps = 5;
         bool flag = false;
         bool ok = false;
+
         Point centre;
         Point A;
         Point B;
@@ -55,6 +57,7 @@ namespace _1_mod
                     if (points[i].X < e.X + eps && points[i].X > e.X - eps && points[i].Y < e.Y + eps && points[i].Y > e.Y - eps)
                     {
                         n = i;
+                        break;
                     }
                 }
             }
@@ -65,6 +68,7 @@ namespace _1_mod
                     if (figure[i].X < e.X + eps && figure[i].X > e.X - eps && figure[i].Y < e.Y + eps && figure[i].Y > e.Y - eps)
                     {
                         n = i;
+                        break;
                     }
                 }
             }
@@ -155,7 +159,7 @@ namespace _1_mod
             {
                 newFigure[i] = new Point(figure[i].X - centre.X, figure[i].Y - centre.Y);
                 newFigure[i] = new Point((int)(newFigure[i].X * Math.Cos((double)(a) * Math.PI / 180) - newFigure[i].Y * Math.Sin((double)(a) * Math.PI / 180)),
-                    (int)(newFigure[i].X * Math.Sin((double)(a) * Math.PI / 180) + newFigure[i].Y * Math.Cos((double)(a) * Math.PI / 180)));
+                                         (int)(newFigure[i].X * Math.Sin((double)(a) * Math.PI / 180) + newFigure[i].Y * Math.Cos((double)(a) * Math.PI / 180)));
             }
 
             // Сдвиг по прямой

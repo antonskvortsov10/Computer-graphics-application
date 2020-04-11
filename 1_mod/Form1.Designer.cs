@@ -52,7 +52,7 @@
             this.DrawFigureButton.Name = "DrawFigureButton";
             this.DrawFigureButton.Size = new System.Drawing.Size(125, 23);
             this.DrawFigureButton.TabIndex = 2;
-            this.DrawFigureButton.Text = "DrawFigure";
+            this.DrawFigureButton.Text = "Нарисовать фигуру";
             this.DrawFigureButton.UseVisualStyleBackColor = true;
             this.DrawFigureButton.Click += new System.EventHandler(this.DrawFigureButton_Click);
             // 
@@ -60,7 +60,7 @@
             // 
             this.RunButton.Location = new System.Drawing.Point(426, 453);
             this.RunButton.Name = "RunButton";
-            this.RunButton.Size = new System.Drawing.Size(75, 23);
+            this.RunButton.Size = new System.Drawing.Size(125, 23);
             this.RunButton.TabIndex = 3;
             this.RunButton.Text = "Запуск";
             this.RunButton.UseVisualStyleBackColor = true;
@@ -75,7 +75,7 @@
             // 
             this.StopButton.Location = new System.Drawing.Point(426, 503);
             this.StopButton.Name = "StopButton";
-            this.StopButton.Size = new System.Drawing.Size(75, 23);
+            this.StopButton.Size = new System.Drawing.Size(125, 23);
             this.StopButton.TabIndex = 4;
             this.StopButton.Text = "Стоп";
             this.StopButton.UseVisualStyleBackColor = true;
@@ -92,7 +92,7 @@
             this.Controls.Add(this.SwitchButton);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Graphics app";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
