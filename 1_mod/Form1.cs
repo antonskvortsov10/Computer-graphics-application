@@ -12,9 +12,9 @@ namespace _1_mod
 {
     public partial class Form1 : Form
     {
-        Graphics graf;
+        Graphics graph;
         List<Point> points = new List<Point>();
-        List<Point> new_figure = new List<Point>();
+        List<Point> newFigure = new List<Point>();
         List<Point> figure = new List<Point>();
         int n;
         int eps = 5;
@@ -32,7 +32,7 @@ namespace _1_mod
         public Form1()
         {
             InitializeComponent();
-            graf = CreateGraphics();
+            graph = CreateGraphics();
         }
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
@@ -40,13 +40,13 @@ namespace _1_mod
             n = -1;
             if (e.Button == MouseButtons.Left && !flag)
             {
-                points.Add(new Point(e.X, e.Y));
-                graf.DrawRectangle(Pens.Red, e.X - 2, e.Y - 2, 5, 5);
+                points.Add(new Point(e.X, e.Y));    // Добавляем точку в наш маршрут
+                graph.DrawRectangle(Pens.Red, e.X - 2, e.Y - 2, 5, 5);  // Отрисовка точки
             }
             if (e.Button == MouseButtons.Left && flag)
             {
-                figure.Add(new Point(e.X, e.Y));
-                graf.DrawRectangle(Pens.Red, e.X - 2, e.Y - 2, 5, 5);
+                figure.Add(new Point(e.X, e.Y));    // Добавляем точку фигуры
+                graph.DrawRectangle(Pens.Red, e.X - 2, e.Y - 2, 5, 5);  // Отрисовка точки
             }
             if (e.Button == MouseButtons.Right && !flag)
             {
@@ -68,26 +68,28 @@ namespace _1_mod
                     }
                 }
             }
-        }    private void DrawScene()
+        }
+
+        private void DrawScene()
         {
-            graf.Clear(Color.White);
+            graph.Clear(Color.White);
             if (!timer1.Enabled)
             {
                 for (int i = 0; i < points.Count(); i++)
                 {
-                    graf.DrawLine(Pens.Black, points[i], points[(i + 1) % points.Count()]);
-                    graf.DrawRectangle(Pens.Red, points[i].X - 2, points[i].Y - 2, 5, 5);
+                    graph.DrawLine(Pens.Black, points[i], points[(i + 1) % points.Count()]);
+                    graph.DrawRectangle(Pens.Red, points[i].X - 2, points[i].Y - 2, 5, 5);
                 }
                 for (int i = 0; i < figure.Count(); i++)
                 {
-                    graf.DrawRectangle(Pens.Red, figure[i].X - 2, figure[i].Y - 2, 5, 5);
+                    graph.DrawRectangle(Pens.Red, figure[i].X - 2, figure[i].Y - 2, 5, 5);
                 }
                 if (ok)
                 {
                     Point[] fig = new Point[figure.Count()];
                     for (int i = 0; i < figure.Count(); i++)
                         fig[i] = figure[i];
-                    graf.FillPolygon(Brushes.Blue, fig);
+                    graph.FillPolygon(Brushes.Blue, fig);
                 }
             }
         }
@@ -97,27 +99,27 @@ namespace _1_mod
             DrawScene();
         }
 
-        private void Flag_Click(object sender, EventArgs e)
+        private void SwitchButton_Click(object sender, EventArgs e)
         {
-            flag = !flag;
+            flag = !flag;   // Переключение
         }
 
-        private void drawfigure_Click(object sender, EventArgs e)
+        private void DrawFigureButton_Click(object sender, EventArgs e)
         {
-            ok = true;
+            ok = true;  // Нарисовали фигуру
             DrawScene();
         }
 
-        private void run_Click(object sender, EventArgs e)
+        private void RunButton_Click(object sender, EventArgs e)
         {
-            new_figure.Clear();
+            newFigure.Clear();
             A = new Point(points[0].X, points[0].Y);
             B = new Point(points[1].X, points[1].Y);
             int sum_x = 0;
             int sum_y = 0;
             for (int i = 0; i < figure.Count(); i++)
             {
-                new_figure.Add(new Point(figure[i].X, figure[i].Y));
+                newFigure.Add(new Point(figure[i].X, figure[i].Y));
                 sum_x += figure[i].X;
                 sum_y += figure[i].Y;
             }
@@ -126,7 +128,7 @@ namespace _1_mod
             timer1.Start();
         }
 
-        private void stop_Click(object sender, EventArgs e)
+        private void StopButton_Click(object sender, EventArgs e)
         {
             timer1.Stop();
         }
@@ -149,35 +151,35 @@ namespace _1_mod
         private void timer1_Tick(object sender, EventArgs e)
         {
             // Сдвиг к началу координат + поворот
-            for (int i = 0; i < new_figure.Count(); i++)
+            for (int i = 0; i < newFigure.Count(); i++)
             {
-                new_figure[i] = new Point(figure[i].X - centre.X, figure[i].Y - centre.Y);
-                new_figure[i] = new Point((int)(new_figure[i].X * Math.Cos((double)(a) * Math.PI / 180) - new_figure[i].Y * Math.Sin((double)(a) * Math.PI / 180)),
-                    (int)(new_figure[i].X * Math.Sin((double)(a) * Math.PI / 180) + new_figure[i].Y * Math.Cos((double)(a) * Math.PI / 180)));
+                newFigure[i] = new Point(figure[i].X - centre.X, figure[i].Y - centre.Y);
+                newFigure[i] = new Point((int)(newFigure[i].X * Math.Cos((double)(a) * Math.PI / 180) - newFigure[i].Y * Math.Sin((double)(a) * Math.PI / 180)),
+                    (int)(newFigure[i].X * Math.Sin((double)(a) * Math.PI / 180) + newFigure[i].Y * Math.Cos((double)(a) * Math.PI / 180)));
             }
 
             // Сдвиг по прямой
             Point L = new Point((int)((1 - t) * A.X + t * B.X), (int)((1 - t) * A.Y + t * B.Y));
-            for (int i = 0; i < new_figure.Count(); i++)
+            for (int i = 0; i < newFigure.Count(); i++)
             {
-                new_figure[i] = new Point(new_figure[i].X + L.X, new_figure[i].Y + L.Y);
+                newFigure[i] = new Point(newFigure[i].X + L.X, newFigure[i].Y + L.Y);
             }
 
             // Перерисовка
-            graf.Clear(Color.White);
+            graph.Clear(Color.White);
             for (int i = 0; i < points.Count(); i++)
             {
-                graf.DrawLine(Pens.Black, points[i], points[(i + 1) % points.Count()]);
-                graf.DrawRectangle(Pens.Red, points[i].X - 2, points[i].Y - 2, 5, 5);
+                graph.DrawLine(Pens.Black, points[i], points[(i + 1) % points.Count()]);
+                graph.DrawRectangle(Pens.Red, points[i].X - 2, points[i].Y - 2, 5, 5);
             }
-            for (int i = 0; i < new_figure.Count(); i++)
+            for (int i = 0; i < newFigure.Count(); i++)
             {
-                graf.DrawRectangle(Pens.Red, new_figure[i].X - 2, new_figure[i].Y - 2, 5, 5);
+                graph.DrawRectangle(Pens.Red, newFigure[i].X - 2, newFigure[i].Y - 2, 5, 5);
             }
-            Point[] fig = new Point[new_figure.Count()];
-            for (int i = 0; i < new_figure.Count(); i++)
-                fig[i] = new_figure[i];
-            graf.FillPolygon(Brushes.Blue, fig);
+            Point[] fig = new Point[newFigure.Count()];
+            for (int i = 0; i < newFigure.Count(); i++)
+                fig[i] = newFigure[i];
+            graph.FillPolygon(Brushes.Blue, fig);
             t += dt; a+=3;
             if (t > 1)
             {

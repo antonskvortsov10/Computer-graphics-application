@@ -29,67 +29,67 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Flag = new System.Windows.Forms.Button();
-            this.drawfigure = new System.Windows.Forms.Button();
-            this.run = new System.Windows.Forms.Button();
+            this.SwitchButton = new System.Windows.Forms.Button();
+            this.DrawFigureButton = new System.Windows.Forms.Button();
+            this.RunButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.stop = new System.Windows.Forms.Button();
+            this.StopButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Flag
+            // SwitchButton
             // 
-            this.Flag.Location = new System.Drawing.Point(769, 453);
-            this.Flag.Name = "Flag";
-            this.Flag.Size = new System.Drawing.Size(125, 23);
-            this.Flag.TabIndex = 1;
-            this.Flag.Text = "Переключить";
-            this.Flag.UseVisualStyleBackColor = true;
-            this.Flag.Click += new System.EventHandler(this.Flag_Click);
+            this.SwitchButton.Location = new System.Drawing.Point(769, 453);
+            this.SwitchButton.Name = "SwitchButton";
+            this.SwitchButton.Size = new System.Drawing.Size(125, 23);
+            this.SwitchButton.TabIndex = 1;
+            this.SwitchButton.Text = "Переключить";
+            this.SwitchButton.UseVisualStyleBackColor = true;
+            this.SwitchButton.Click += new System.EventHandler(this.SwitchButton_Click);
             // 
-            // drawfigure
+            // DrawFigureButton
             // 
-            this.drawfigure.Location = new System.Drawing.Point(769, 503);
-            this.drawfigure.Name = "drawfigure";
-            this.drawfigure.Size = new System.Drawing.Size(125, 23);
-            this.drawfigure.TabIndex = 2;
-            this.drawfigure.Text = "DrawFigure";
-            this.drawfigure.UseVisualStyleBackColor = true;
-            this.drawfigure.Click += new System.EventHandler(this.drawfigure_Click);
+            this.DrawFigureButton.Location = new System.Drawing.Point(769, 503);
+            this.DrawFigureButton.Name = "DrawFigureButton";
+            this.DrawFigureButton.Size = new System.Drawing.Size(125, 23);
+            this.DrawFigureButton.TabIndex = 2;
+            this.DrawFigureButton.Text = "DrawFigure";
+            this.DrawFigureButton.UseVisualStyleBackColor = true;
+            this.DrawFigureButton.Click += new System.EventHandler(this.DrawFigureButton_Click);
             // 
-            // run
+            // RunButton
             // 
-            this.run.Location = new System.Drawing.Point(426, 453);
-            this.run.Name = "run";
-            this.run.Size = new System.Drawing.Size(75, 23);
-            this.run.TabIndex = 3;
-            this.run.Text = "Запуск";
-            this.run.UseVisualStyleBackColor = true;
-            this.run.Click += new System.EventHandler(this.run_Click);
+            this.RunButton.Location = new System.Drawing.Point(426, 453);
+            this.RunButton.Name = "RunButton";
+            this.RunButton.Size = new System.Drawing.Size(75, 23);
+            this.RunButton.TabIndex = 3;
+            this.RunButton.Text = "Запуск";
+            this.RunButton.UseVisualStyleBackColor = true;
+            this.RunButton.Click += new System.EventHandler(this.RunButton_Click);
             // 
             // timer1
             // 
             this.timer1.Interval = 50;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // stop
+            // StopButton
             // 
-            this.stop.Location = new System.Drawing.Point(426, 503);
-            this.stop.Name = "stop";
-            this.stop.Size = new System.Drawing.Size(75, 23);
-            this.stop.TabIndex = 4;
-            this.stop.Text = "Стоп";
-            this.stop.UseVisualStyleBackColor = true;
-            this.stop.Click += new System.EventHandler(this.stop_Click);
+            this.StopButton.Location = new System.Drawing.Point(426, 503);
+            this.StopButton.Name = "StopButton";
+            this.StopButton.Size = new System.Drawing.Size(75, 23);
+            this.StopButton.TabIndex = 4;
+            this.StopButton.Text = "Стоп";
+            this.StopButton.UseVisualStyleBackColor = true;
+            this.StopButton.Click += new System.EventHandler(this.StopButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1232, 640);
-            this.Controls.Add(this.stop);
-            this.Controls.Add(this.run);
-            this.Controls.Add(this.drawfigure);
-            this.Controls.Add(this.Flag);
+            this.Controls.Add(this.StopButton);
+            this.Controls.Add(this.RunButton);
+            this.Controls.Add(this.DrawFigureButton);
+            this.Controls.Add(this.SwitchButton);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -102,11 +102,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Flag;
-        private System.Windows.Forms.Button drawfigure;
-        private System.Windows.Forms.Button run;
+        private System.Windows.Forms.Button SwitchButton;
+        private System.Windows.Forms.Button DrawFigureButton;
+        private System.Windows.Forms.Button RunButton;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button stop;
+        private System.Windows.Forms.Button StopButton;
     }
 }
 

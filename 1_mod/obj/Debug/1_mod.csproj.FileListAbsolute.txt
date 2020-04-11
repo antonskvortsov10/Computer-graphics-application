@@ -35,3 +35,13 @@ F:\1_mod\obj\Debug\_1_mod.Properties.Resources.resources
 F:\1_mod\obj\Debug\1_mod.csproj.GenerateResource.Cache
 F:\1_mod\obj\Debug\1_mod.csprojAssemblyReference.cache
 F:\1_mod\obj\Debug\1_mod.csproj.CoreCompileInputs.cache
+C:\Users\Anton\GraphicsOnCSharp\Computer-graphics-application\1_mod\bin\Debug\1_mod.exe.config
+C:\Users\Anton\GraphicsOnCSharp\Computer-graphics-application\1_mod\bin\Debug\1_mod.exe
+C:\Users\Anton\GraphicsOnCSharp\Computer-graphics-application\1_mod\bin\Debug\1_mod.pdb
+C:\Users\Anton\GraphicsOnCSharp\Computer-graphics-application\1_mod\obj\Debug\1_mod.csprojAssemblyReference.cache
+C:\Users\Anton\GraphicsOnCSharp\Computer-graphics-application\1_mod\obj\Debug\_1_mod.Form1.resources
+C:\Users\Anton\GraphicsOnCSharp\Computer-graphics-application\1_mod\obj\Debug\_1_mod.Properties.Resources.resources
+C:\Users\Anton\GraphicsOnCSharp\Computer-graphics-application\1_mod\obj\Debug\1_mod.csproj.GenerateResource.cache
+C:\Users\Anton\GraphicsOnCSharp\Computer-graphics-application\1_mod\obj\Debug\1_mod.csproj.CoreCompileInputs.cache
+C:\Users\Anton\GraphicsOnCSharp\Computer-graphics-application\1_mod\obj\Debug\1_mod.exe
+C:\Users\Anton\GraphicsOnCSharp\Computer-graphics-application\1_mod\obj\Debug\1_mod.pdb
