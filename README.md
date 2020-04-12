@@ -19,12 +19,18 @@ This program is written using .NET Framework.
 
 <p><img src="1_mod/Screenshots/Step6.png"></p>
 
-<p><strong>So here is the final result:</strong></p>
+<p><strong>So you can start the moving:</strong></p>
 
 <p><img src="1_mod/Screenshots/Result1.png"></p>
 
+<p><strong>As you can see the figure is rotating during this motion:</strong></p>
+
 <p><img src="1_mod/Screenshots/Result2.png"></p>
 
+<p><strong>You can also drag any point of the route:</strong></p>
+
 <p><img src="1_mod/Screenshots/Result3.png"></p>
+
+<p><strong>After that you should stop the moving:</strong></p>
 
 <p><img src="1_mod/Screenshots/Stop.png"></p>
