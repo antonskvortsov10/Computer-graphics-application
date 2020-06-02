@@ -9,9 +9,13 @@ This program is written using .NET Framework.
 
 <p><img src="1_mod/Screenshots/Step1.png"></p>
 
+<p><strong>First of all, mark the route:</strong></p>
+
 <p><img src="1_mod/Screenshots/Step2.png"></p>
 
 <p><img src="1_mod/Screenshots/Step3.png"></p>
+
+<p><strong>Then draw the figure:</strong></p>
 
 <p><img src="1_mod/Screenshots/Step4.png"></p>
 
