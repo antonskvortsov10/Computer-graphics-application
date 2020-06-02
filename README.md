@@ -21,9 +21,9 @@ This program is written using .NET Framework.
 
 <p><img src="1_mod/Screenshots/Step5.png"></p>
 
-<p><img src="1_mod/Screenshots/Step6.png"></p>
-
 <p><strong>So you can start the moving:</strong></p>
+
+<p><img src="1_mod/Screenshots/Step6.png"></p>
 
 <p><img src="1_mod/Screenshots/Result1.png"></p>
 
